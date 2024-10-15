@@ -359,6 +359,13 @@ body {
   .illustration {
     width: 300px;
   }
+  .menu {
+    flex-direction: column;
+  }
+  .menu-item,
+  .auth-buttons {
+    margin-top: 1rem;
+  }
 }
 /* Pantallas muy pequeñas (menos de 480px) */
 @media (max-width: 480px) {
@@ -376,5 +383,12 @@ body {
   }
   .illustration {
     width: 250px;
+  }
+  .menu {
+    flex-direction: column;
+  }
+  .menu-item,
+  .auth-buttons {
+    margin-top: 1rem;
   }
 }
