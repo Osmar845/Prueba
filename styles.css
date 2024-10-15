@@ -314,31 +314,32 @@ body {
     max-width: 90%;
   }
 }
+/* Estilos Responsivos para el texto e imagen del inicio*/
 /* Tamaños grandes (por encima de 1200px) */
 @media (min-width: 1200px) {
   .content-wrapper .content .title {
     font-size: 64px;
   }
-  .content .principal {
+  .content-wrapper .content .principal {
     font-size: 27px;
   }
-  .illustration {
+  .content-wrapper .illustration {
     width: 525px;
   }
 }
 /* Pantallas medianas (768px - 1200px) */
-@media (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .content-wrapper {
     margin-left: 50px;
     width: 60%;
   }
-  .content .title {
+  .content-wrapper .content .title {
     font-size: 48px;
   }
-  .content .principal {
+  .content-wrapper .content .principal {
     font-size: 22px;
   }
-  .illustration {
+  .content-wrapper .illustration {
     width: 400px;
   }
 }
@@ -347,16 +348,16 @@ body {
   .content-wrapper {
     margin-left: 20px;
     width: 80%;
-    margin-top: 150px;
+    margin-top: 1800px;
     /* Ajustar para dispositivos pequeños */
   }
-  .content .title {
-    font-size: 36px;
+  .content-wrapper .content .title {
+    font-size: 25px;
   }
-  .content .principal {
-    font-size: 18px;
+  .content-wrapper .content .principal {
+    font-size: 15px;
   }
-  .illustration {
+  .content-wrapper .illustration {
     width: 300px;
   }
   .menu {
@@ -367,28 +368,16 @@ body {
     margin-top: 1rem;
   }
 }
-/* Pantallas muy pequeñas (menos de 480px) */
-@media (max-width: 480px) {
-  .content-wrapper {
-    margin-left: 10px;
-    width: 90%;
-    margin-top: 200px;
-    /* Más espacio en móviles */
+/* Estilos Responsivos para el texto del final */
+/* Pantallas medianas (tablets, etc.) */
+@media (max-width: 1024px) {
+  .final h1 {
+    font-size: 3.5rem;
   }
-  .content .title {
-    font-size: 28px;
-  }
-  .content .principal {
-    font-size: 16px;
-  }
-  .illustration {
-    width: 250px;
-  }
-  .menu {
-    flex-direction: column;
-  }
-  .menu-item,
-  .auth-buttons {
-    margin-top: 1rem;
+}
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .final h1 {
+    font-size: 3rem;
   }
 }
