@@ -118,9 +118,10 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 3rem;
-  max-width: 100%;
+  max-width: 1200px;
   width: 100%;
   margin-top: 1100px;
+  margin: 0 auto;
 }
 .content-wrapper .content {
   display: flex;
@@ -298,21 +299,23 @@ body {
 /* Estilos Responsivos */
 /* Tamaños grandes (por encima de 1200px) */
 @media (min-width: 1200px) {
-  .content-wrapper .content .title {
+  .content-wrapper {
+    padding: 2rem;
+  }
+  .content .title {
     font-size: 64px;
   }
-  .content-wrapper .content .principal {
+  .content .principal {
     font-size: 27px;
-  }
-  .content-wrapper .illustration {
-    width: 525px;
   }
 }
 /* Pantallas medianas (768px - 1200px) */
 @media (min-width: 768px) and (max-width: 1199px) {
   .content-wrapper {
+    flex-direction: column;
+    align-items: center;
     margin-left: 50px;
-    width: 60%;
+    width: 80%;
   }
   .content-wrapper .content .title {
     font-size: 2rem;
@@ -322,6 +325,7 @@ body {
   }
   .content-wrapper .illustration {
     width: 400px;
+    margin-left: 0;
   }
   .reseñas h1 {
     font-size: 2rem;
@@ -352,8 +356,10 @@ body {
 /* Pantallas pequeñas (menos de 768px) */
 @media (max-width: 768px) {
   .content-wrapper {
+    flex-direction: column;
+    padding: 1rem;
     margin-left: 20px;
-    width: 80%;
+    width: 60%;
     margin-top: 1800px;
     /* Ajustar para dispositivos pequeños */
   }
@@ -415,3 +421,4 @@ body {
     font-size: 0.5rem;
   }
 }
+/* Pantallas pequeñas (menos de 768px) */
