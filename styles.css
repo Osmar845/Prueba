@@ -328,10 +328,10 @@ body {
     align-items: center;
     width: 100%;
   }
-  .content .title {
+  .content-wrapper .content .title {
     font-size: 2rem;
   }
-  .content .titleQS {
+  .content-wrapper .content .titleQS {
     font-size: 2rem;
   }
   .content-wrapper .content .principal {
@@ -385,14 +385,14 @@ body {
     flex-direction: column;
     padding: 1rem;
     margin-left: 20px;
-    width: 60%;
+    width: 92%;
     margin-top: 50px;
     /* Ajustar para dispositivos pequeños */
   }
   .content-wrapper .content .title {
     font-size: 1.5rem;
   }
-  .content .titleQS {
+  .content-wrapper .content .titleQS {
     font-size: 1.5rem;
   }
   .content-wrapper .content .principal {
