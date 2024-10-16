@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Planes de Suscripcion</title>
+    <script src="menu.js"></script>
+    <script src="precios.js" defer></script>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li class="logo">
+                  <img src="Logo C-fondo.png" alt="Logo"> 
+            </li>
+            <button class="menu-toggle">☰</button>
+            <div class="menu-item">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/quienesSomos.html">¿Quienes Somos?</a></li>
+                <li><a href="/afiliacion.html">Afiliación de Hospitales</a></li>
+                <li><a href="/planes.html">Planes</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
+            </div>
+            <div class="auth-buttons">
+                <button id="btn-login">Iniciar Sesión</button>
+                <button id="btn-register">Registrarse</button>
+            </div>
+        </ul>
+    </nav>
+    <div>
+        <div class="content-wrapper">
+            <div class="content">
+                <h1 class="titleP">Planes de Suscricpicón</h1>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="toggle-buttons">
+                <button onclick="togglePricing('individual')" class="active" id="individualBtn">Individual</button>
+                <button onclick="togglePricing('enterprise')" id="enterpriseBtn">Enterprise</button>
+            </div>
+            
+            <div class="pricing-cards" id="individualPricing">
+                <div class="card red">
+                    <h2>Mensual</h2>
+                    <p class="price">$180</p>
+                    <ul>
+                        <li>Gestión eficiente de citas</li>
+                        <li>Historial médico digital</li>
+                        <li>Acceso desde cualquier dispositivo</li>
+                        <li>Manejo eficiente de tiempos</li>
+                        <li>Seguridad de datos</li>
+                        <li>Recordatorios automatizados</li>
+                    </ul>
+                    <button>Seleccionar</button>
+                </div>
+                <div class="card dark">
+                    <h2>Anual</h2>
+                    <p class="price">$2,000</p>
+                    <ul>
+                        <li>Gestión eficiente de citas</li>
+                        <li>Historial médico digital</li>
+                        <li>Acceso desde cualquier dispositivo</li>
+                        <li>Manejo eficiente de tiempos</li>
+                        <li>Seguridad de datos</li>
+                        <li>Recordatorios automatizados</li>
+                    </ul>
+                    <button>Seleccionar</button>
+                </div>
+            </div>
+            
+            <div class="pricing-cards hidden" id="enterprisePricing">
+                <div class="card dark">
+                    <h2>Mensual</h2>
+                    <p class="price">$600</p>
+                    <ul>
+                        <li>Gestión eficiente de citas</li>
+                        <li>Historial médico digital</li>
+                        <li>Acceso desde cualquier dispositivo</li>
+                        <li>Manejo eficiente de tiempos</li>
+                        <li>Seguridad de datos</li>
+                        <li>Recordatorios automatizados</li>
+                        <li>Soporte hasta para 10 médicos</li>
+                    </ul>
+                    <button>Seleccionar</button>
+                </div>
+                <div class="card red">
+                    <h2>Anual</h2>
+                    <p class="price">$7,000</p>
+                    <ul>
+                        <li>Gestión eficiente de citas</li>
+                        <li>Historial médico digital</li>
+                        <li>Acceso desde cualquier dispositivo</li>
+                        <li>Manejo eficiente de tiempos</li>
+                        <li>Seguridad de datos</li>
+                        <li>Recordatorios automatizados</li>
+                        <li>Soporte hasta para 10 médicos</li>
+                    </ul>
+                    <button>Seleccionar</button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-text">
+                MedicalPro 2024 - Software para Citas Médicas
+            </div>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </footer>   
+    </div>
+</body>
+</html>

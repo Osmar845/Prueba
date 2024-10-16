@@ -104,6 +104,62 @@ body {
   max-width: 100%;
   width: 100%;
 }
+.content-wrapper .content1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 20px;
+  background: var(--negroBajito);
+  padding: 1rem;
+  color: #FFFFFF;
+  border-radius: 1rem;
+  align-items: center;
+}
+.content-wrapper .content1 .illustration3 {
+  flex: 1;
+  max-width: 525px;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+.content-wrapper .content1 .principal {
+  text-align: center;
+}
+.content-wrapper .content2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 20px;
+  background: var(--titulos);
+  padding: 1rem;
+  color: #FFFFFF;
+  border-radius: 1rem;
+  align-items: center;
+}
+.content-wrapper .content2 .illustration4 {
+  flex: 1;
+  max-width: 525px;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+.content-wrapper .content2 .principal {
+  text-align: center;
+}
+.content-wrapper .titleQS {
+  flex: 1;
+  font-size: 64px;
+  color: var(--titulos);
+  padding-bottom: 1rem;
+}
+.content-wrapper .titleP {
+  font-size: 64px;
+  color: var(--titulos);
+  padding-bottom: 1rem;
+  text-align: center;
+}
 .content-wrapper .content {
   display: flex;
   flex-direction: column;
@@ -299,6 +355,77 @@ body {
   text-decoration: none;
   font-size: 20px;
 }
+.container1 {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.toggle-buttons button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ddd;
+  cursor: pointer;
+}
+.toggle-buttons button.active {
+  background-color: #bbb;
+}
+.pricing-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card {
+  width: 700px;
+  padding: 1rem;
+  margin: 0.7rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+.card h2 {
+  font-size: 24px;
+  margin-top: 0;
+  text-align: center;
+}
+.card ul {
+  list-style-type: none;
+  padding: 0;
+}
+.card li {
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 48px;
+  text-align: center;
+}
+.card button {
+  margin-top: 1rem;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: var(--white);
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.card .price {
+  font-size: 2em;
+  font-weight: bold;
+}
+.card.red {
+  background: var(--titulos);
+}
+.card.dark {
+  background: var(--negroBajito);
+}
+.hidden {
+  display: none;
+}
 /* Estilos Responsivos */
 /* Tamaños grandes (por encima de 1200px) */
 @media (min-width: 1200px) {
@@ -332,6 +459,12 @@ body {
     font-size: 2rem;
   }
   .content-wrapper .content .titleQS {
+    font-size: 2rem;
+  }
+  .content-wrapper .content1 .titleQS {
+    font-size: 2rem;
+  }
+  .content-wrapper .content2 .titleQS {
     font-size: 2rem;
   }
   .content-wrapper .content .principal {
@@ -389,7 +522,13 @@ body {
     margin-top: 50px;
     /* Ajustar para dispositivos pequeños */
   }
+  .content-wrapper .content2 {
+    margin-top: 1rem;
+  }
   .content-wrapper .content .title {
+    font-size: 1.5rem;
+  }
+  .content-wrapper .content .titlep {
     font-size: 1.5rem;
   }
   .content-wrapper .content .titleQS {
@@ -398,10 +537,26 @@ body {
   .content-wrapper .content .principal {
     font-size: 1rem;
   }
+  .content-wrapper .titleQS {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  .content-wrapper .content1 .principal {
+    font-size: 1rem;
+  }
+  .content-wrapper .content2 .principal {
+    font-size: 1rem;
+  }
   .content-wrapper .illustration {
     width: 200px;
   }
   .content-wrapper2 .illustration2 {
+    width: 200px;
+  }
+  .content-wrapper .illustration3 {
+    width: 200px;
+  }
+  .content-wrapper .illustration4 {
     width: 200px;
   }
   .menu {
