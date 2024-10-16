@@ -14,26 +14,17 @@
   box-sizing: border-box;
 }
 body {
-  font-size: 16px;
-  font-family: 'Work Sans', sans-serif;
-  padding: 1rem;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
+  font-family: Arial, sans-serif;
   background: var(--fondoPrincipal);
+  line-height: 1.6;
 }
 .menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: var(--white);
+  background-color: white;
+  padding: 1rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0.5rem;
-  margin: 0 auto;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .menu ul {
   display: flex;
@@ -44,8 +35,8 @@ body {
   align-items: center;
 }
 .menu-item {
-  float: left;
-  position: relative;
+  display: flex;
+  gap: 20px;
 }
 .menu-item a {
   display: flex;
@@ -83,10 +74,18 @@ body {
   margin-right: 30px;
   margin-left: 20px;
 }
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 .auth-buttons {
   display: flex;
   margin-left: auto;
   /* Esto empuja los botones hacia la derecha */
+  gap: 10px;
 }
 #btn-register,
 #btn-login {
@@ -120,7 +119,6 @@ body {
   padding: 3rem;
   max-width: 100%;
   width: 100%;
-  margin-top: 1100px;
 }
 .content-wrapper .content {
   display: flex;
@@ -357,7 +355,7 @@ body {
     padding: 1rem;
     margin-left: 20px;
     width: 60%;
-    margin-top: 1600px;
+    margin-top: 50px;
     /* Ajustar para dispositivos pequeños */
   }
   .content-wrapper .content .title {
@@ -423,4 +421,21 @@ body {
     font-size: 0.5rem;
   }
 }
-/* Pantallas pequeñas (menos de 768px) */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .menu-item {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+  .menu-item.active {
+    display: flex;
+  }
+  .auth-buttons {
+    margin-top: 1rem;
+  }
+}
