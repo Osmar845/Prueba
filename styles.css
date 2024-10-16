@@ -357,7 +357,7 @@ body {
     padding: 1rem;
     margin-left: 20px;
     width: 60%;
-    margin-top: 1500px;
+    margin-top: 1600px;
     /* Ajustar para dispositivos pequeños */
   }
   .content-wrapper .content .title {
@@ -397,7 +397,7 @@ body {
     font-size: 1.5rem;
   }
   .benefit {
-    width: calc(50% - 20px);
+    width: calc(60% - 10px);
   }
   .benefit .icon {
     font-size: 20px;
@@ -408,6 +408,7 @@ body {
   .usos .container h3 {
     font-size: 0.7rem;
     padding: 0.3rem;
+    text-align: left;
   }
   .usos .container p {
     font-size: 0.5rem;
