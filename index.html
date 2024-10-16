@@ -6,21 +6,26 @@
     <title>Gestor Citas Medicas</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="menu.js"></script>
 </head>
 <body>
     <nav class="menu">
         <ul>
-            <li class="menu-item">
-                  <img src="Logo C-fondo.png" alt="Logo" class="logo"> 
+            <li class="logo">
+                  <img src="Logo C-fondo.png" alt="Logo"> 
             </li>
-            <li class="menu-item"><a href="#">¿Quienes Somos?</a></li>
-            <li class="menu-item"><a href="#">Afiliación de Hospitales</a></li>
-            <li class="menu-item"><a href="#">Planes</a></li>
-            <li class="menu-item"><a href="#">Contacto</a></li>
+            
+            <div class="menu-item">
+                <li><a href="#">¿Quienes Somos?</a></li>
+                <li><a href="#">Afiliación de Hospitales</a></li>
+                <li><a href="#">Planes</a></li>
+                <li><a href="#">Contacto</a></li>
+            </div>
             <div class="auth-buttons">
                 <button id="btn-login">Iniciar Sesión</button>
                 <button id="btn-register">Registrarse</button>
             </div>
+            <button class="menu-toggle">☰</button>
         </ul>
     </nav>
     <div>
