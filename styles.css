@@ -118,10 +118,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 3rem;
-  max-width: 1200px;
+  max-width: 100%;
   width: 100%;
   margin-top: 1100px;
-  margin: 0 auto;
 }
 .content-wrapper .content {
   display: flex;
@@ -312,10 +311,8 @@ body {
 /* Pantallas medianas (768px - 1200px) */
 @media (min-width: 768px) and (max-width: 1199px) {
   .content-wrapper {
-    flex-direction: column;
     align-items: center;
-    margin-left: 50px;
-    width: 80%;
+    width: 100%;
   }
   .content-wrapper .content .title {
     font-size: 2rem;
@@ -324,7 +321,7 @@ body {
     font-size: 1.375rem;
   }
   .content-wrapper .illustration {
-    width: 400px;
+    width: 300px;
     margin-left: 0;
   }
   .reseñas h1 {
@@ -370,7 +367,7 @@ body {
     font-size: 1rem;
   }
   .content-wrapper .illustration {
-    width: 300px;
+    width: 200px;
   }
   .menu {
     flex-direction: column;
@@ -402,11 +399,15 @@ body {
   .benefit {
     width: calc(50% - 20px);
   }
+  .benefit .icon {
+    font-size: 20px;
+  }
   .usos .container h1 {
     font-size: 1.5rem;
   }
   .usos .container h3 {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
+    padding: 0.3rem;
   }
   .usos .container p {
     font-size: 0.5rem;
