@@ -438,5 +438,6 @@ body {
   }
   .auth-buttons {
     margin-top: 1rem;
+    flex-direction: column;
   }
 }
