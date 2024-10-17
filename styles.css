@@ -799,19 +799,6 @@ body {
   .container .benefit {
     width: calc(50% - 20px);
   }
-  .benefit .icon {
-    font-size: 20px;
-  }
-  .usos .container h1 {
-    font-size: 1.5rem;
-  }
-  .usos .container h3 {
-    font-size: 0.7rem;
-    padding: 0.3rem;
-  }
-  .usos .container p {
-    font-size: 0.5rem;
-  }
   .menu-item img {
     width: 3.125rem;
     height: auto;
