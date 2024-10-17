@@ -700,14 +700,8 @@ body {
   .final h1 {
     font-size: 3.5rem;
   }
-  .usos .container h1 {
-    font-size: 2rem;
-  }
-  .usos .container h3 {
-    font-size: 1rem;
-  }
-  .usos .container p {
-    font-size: 0.8rem;
+  .container .benefit {
+    width: calc(33.33% - 20px);
   }
   .menu-item img {
     width: 4rem;
@@ -826,10 +820,5 @@ body {
   .auth-buttons {
     margin-top: 1rem;
     flex-direction: column;
-  }
-}
-@media (max-width: 480px) {
-  .benefit {
-    width: 100%;
   }
 }
