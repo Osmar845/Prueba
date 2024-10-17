@@ -14,6 +14,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
-function irAOtraPagina() {
+function login() {
     window.location.href = 'login.html';
+}
+
+function registro() {
+    window.location.href = 'registro.html';
 }
