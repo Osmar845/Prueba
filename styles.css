@@ -426,6 +426,65 @@ body {
 .hidden {
   display: none;
 }
+.container2 {
+  max-width: 1500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  padding: 1rem 1rem;
+  margin: 40px auto;
+}
+.container2 .my-form {
+  max-width: 1500px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 2rem;
+  background: var(--formularios);
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.container2 .my-form input[type="text"],
+.container2 .my-form input[type="email"],
+.container2 .my-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.container2 .my-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.container2 .my-form button {
+  background: var(--negroBajito);
+  color: var(--white);
+  border-radius: 0.5rem;
+  border: none;
+  text-align: center;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+}
+.container2 .my-form button:hover {
+  background: var(--titulos);
+  transition: all 0.3s ease-in-out;
+}
+.container2 .my-form a {
+  display: flex;
+  color: #000000;
+  padding-top: 1rem;
+  text-align: center;
+}
+.container2 .my-form a:visited {
+  color: var(--sustitulos);
+}
+.container2 .my-form a:hover {
+  color: var(--titulos);
+  transition: all 0.3s ease-in-out;
+}
 /* Estilos Responsivos */
 /* Tamaños grandes (por encima de 1200px) */
 @media (min-width: 1200px) {
