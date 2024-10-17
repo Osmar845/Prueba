@@ -23,7 +23,7 @@
                 <li><a href="/contacto.html">Contacto</a></li>
             </div>
             <div class="auth-buttons">
-                <button id="btn-login">Iniciar Sesión</button>
+                <button id="btn-login" onclick="irAOtraPagina()">Iniciar Sesión</button>
                 <button id="btn-register">Registrarse</button>
             </div>
         </ul>
@@ -37,13 +37,19 @@
         <div class="container2">
             <div class="my-form">
                 <form id="contacto-form">
-                    <label>Nombre Completo</label>
-                    <input type="text" id="author" placeholder="Nombre Completo" required>
-                    <label>Correo Electrónico</label>
-                    <input type="email" id="author" placeholder="Email" required>
-                    <label>Motivo</label>
-                    <textarea id="text" placeholder="Escribe tu Mensaje Aquí" required></textarea>
-                    <button type="submit">Enviar Mensaje</button>
+                <div class="input_wrapper">
+                    <input type="text" id="nombre" name="nombre" class="input_field" placeholder="Nombre Completo" required>
+                    <label for="nombre" class="input_label">Nombre Completo</label>
+                </div>
+                <div class="input_wrapper">
+                    <input type="email" id="email" name="email"                   class="input_field" placeholder="Email" required>
+                    <label for="email" class="input_label">Correo Electrónico</label>
+                </div>
+                <div class="input_wrapper">
+                    <textarea type="text" id="mensaje" class="input_field" placeholder="Escribe tu Mensaje Aquí" required></textarea>
+                    <label for="mensaje" class="input_label">Mensaje</label>
+                </div>
+                    <button type="submit" class="my-form_button">Enviar Mensaje</button>
                     <a class="correo" href="mailto:osmar.castaneda29@gmail.com">Contáctanos Aquí..!!</a>
                 </form>
             </div>

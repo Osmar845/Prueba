@@ -8,6 +8,7 @@
   --botones: #e03652;
   --grisBotones: #585858;
   --error: #ff0000;
+  --links: #002fff;
 }
 * {
   margin: 0;
@@ -435,6 +436,7 @@ body {
   background: var(--white);
   padding: 1rem 1rem;
   margin: 40px auto;
+  border-radius: 1rem;
 }
 .container2 .my-form {
   max-width: 1500px;
@@ -448,30 +450,21 @@ body {
 .container2 .my-form input[type="text"],
 .container2 .my-form input[type="email"],
 .container2 .my-form textarea {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  color: #000000;
+  padding-right: 2rem;
+  padding-bottom: 0.5rem;
+  line-height: 2rem;
+  height: 2rem;
+  outline: 0;
+  border: 0;
   width: 100%;
-  padding: 8px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-.container2 .my-form label {
-  display: block;
-  margin-bottom: 5px;
-}
-.container2 .my-form button {
-  background: var(--negroBajito);
-  color: var(--white);
-  border-radius: 0.5rem;
-  border: none;
-  text-align: center;
-  padding: 1rem 2rem;
-  cursor: pointer;
-  width: 100%;
-  margin-top: 1rem;
-}
-.container2 .my-form button:hover {
-  background: var(--titulos);
-  transition: all 0.3s ease-in-out;
+  vertical-align: middle;
+  padding-bottom: 0.7rem;
+  border-bottom: 3px solid var(--titulos);
+  background: transparent;
+  transition: border-color 0.2s;
 }
 .container2 .my-form a {
   display: flex;
@@ -482,7 +475,7 @@ body {
   color: var(--sustitulos);
 }
 .container2 .my-form a:hover {
-  color: var(--titulos);
+  color: var(--links);
   transition: all 0.3s ease-in-out;
 }
 /* Estilos para el Login */
@@ -571,6 +564,11 @@ body {
   display: flex;
   gap: 0.5rem;
   justify-content: space-between;
+  margin-top: 2rem;
+}
+.my-form_row a:hover {
+  color: var(--links);
+  transition: all 0.3s ease;
 }
 .page-link {
   text-decoration: underline;
@@ -578,6 +576,10 @@ body {
   text-align: end;
   color: #000000;
   text-decoration-color: var(--titulos);
+}
+.page-link a:hover {
+  color: var(--links);
+  transition: all 0.3s ease;
 }
 .page-link-label {
   cursor: pointer;
