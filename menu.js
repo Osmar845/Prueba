@@ -13,3 +13,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     });
 });
+
+function irAOtraPagina() {
+    window.location.href = 'login.html';
+}
