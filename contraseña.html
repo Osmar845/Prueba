@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Recuperar Contraseña</title>
+  <script src="menu.js"></script>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li class="logo">
+                  <img src="Logo C-fondo.png" alt="Logo"> 
+            </li>
+            <button class="menu-toggle">☰</button>
+            <div class="menu-item">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/quienesSomos.html">¿Quienes Somos?</a></li>
+                <li><a href="/afiliacion.html">Afiliación de Hospitales</a></li>
+                <li><a href="/planes.html">Planes</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
+            </div>
+            <div class="auth-buttons">
+                <button id="btn-login" onclick="login()">Iniciar Sesión</button>
+                <button id="btn-register" onclick="registro()">Registrarse</button>
+            </div>
+        </ul>
+    </nav>
+    <div class="form-password">
+        <div class="login-welcome-row">
+            <a href="#" title="Logo">
+                <img src="/Logo C-fondo.png" alt="MedicalPro" class="logo">
+            </a>
+        <h1>¿Olvidate tu Contraseña? 🙄</h1>
+        <p>Por favor ingresa tu correo electrónico</p>
+        </div>
+        <form class="form-p">
+        <div class="form-group">
+            <input type="email" id="email" name="email" class="input_field" placeholder="Your Email" required="">
+        </div>
+        <button class="my-form_button" type="submit">Enviar Correo</button>
+            <p class="my-form_actions">
+            ¿No tienes cuenta? </p>
+            <a href="registro.html" class="link-registro">Registrate AHORA..!!</a>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="footer-text">
+            MedicalPro 2024 - Software para Citas Médicas
+        </div>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -51,7 +51,7 @@ body {
 .menu-item a:hover {
   color: #FFFFFF;
   background-color: var(--titulos);
-  transition: all 0.3s ease;
+  transition: background-color 0.5s ease;
 }
 .menu-item:hover .dropdown-content {
   display: block;
@@ -83,20 +83,21 @@ body {
   border: none;
   border-radius: 10px;
   margin-left: 10px;
+  transition: background-color 0.5s ease, transform 0.3s ease;
 }
 #btn-register {
   background: var(--negroBajito);
 }
 #btn-register:hover {
   background: var(--grisBotones);
-  transition: all 0.3s ease;
+  transform: translateY(-10px);
 }
 #btn-login {
   background: var(--titulos);
 }
 #btn-login:hover {
   background: var(--botones);
-  transition: all 0.3s ease;
+  transform: translateY(-10px);
 }
 .content-wrapper {
   display: flex;
@@ -429,19 +430,17 @@ body {
   display: none;
 }
 .container2 {
-  max-width: 1500px;
+  max-width: 1200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--white);
   padding: 1rem 1rem;
   margin: 40px auto;
   border-radius: 1rem;
 }
 .container2 .my-form {
-  max-width: 1500px;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 2rem;
   background: var(--formularios);
   margin-bottom: 20px;
@@ -450,21 +449,19 @@ body {
 .container2 .my-form input[type="text"],
 .container2 .my-form input[type="email"],
 .container2 .my-form textarea {
-  margin-top: 1.5rem;
-  font-size: 1.5rem;
-  color: #000000;
-  padding-right: 2rem;
-  padding-bottom: 0.5rem;
-  line-height: 2rem;
-  height: 2rem;
-  outline: 0;
-  border: 0;
   width: 100%;
-  vertical-align: middle;
-  padding-bottom: 0.7rem;
-  border-bottom: 3px solid var(--titulos);
-  background: transparent;
-  transition: border-color 0.2s;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.container2 .my-form textarea {
+  padding-bottom: 5rem;
+}
+.container2 .my-form label {
+  user-select: none;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 .container2 .my-form a {
   display: flex;
@@ -478,7 +475,11 @@ body {
   color: var(--links);
   transition: all 0.3s ease-in-out;
 }
-/* Estilos para el varios formularios (Login, Registro) */
+.input-contacto::placeholder {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Estilos para varios formularios (Login, Registro) */
 .login-welcome-row {
   margin-bottom: 1rem;
   text-align: center;
@@ -638,6 +639,32 @@ body {
 }
 .escondido {
   display: none;
+}
+.form-password {
+  max-width: 32rem;
+  margin: 0 auto 40px;
+  background: var(--white);
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  margin-top: 5rem;
+}
+.form-password p {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.link-registro {
+  display: flex;
+  margin-top: 1rem;
+  cursor: pointer;
+  text-align: right;
+  color: var(--sustitulos);
+  max-width: 170px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.link-registro:hover {
+  color: var(--links);
+  transform: scale(1.1);
 }
 /* Estilos Responsivos */
 /* Tamaños grandes (por encima de 1200px) */
